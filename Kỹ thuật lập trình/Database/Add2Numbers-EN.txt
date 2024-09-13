@@ -1,0 +1,5 @@
+Calculate total of 2 any numbers
+Input 1st number:
+Input 2nd number:
+Sum of 2 input numbers:
+Continue Yes/No (1/0):

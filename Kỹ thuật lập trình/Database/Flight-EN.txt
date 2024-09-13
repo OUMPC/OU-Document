@@ -1,0 +1,12 @@
+4
+Japan, USA, Australia, South Korea
+Economic, Business, VIP
+USD
+450, 767, 634, 427
+566, 978, 910, 651
+780, 1210, 1325, 1027
+Flight route:
+Type of ticket:
+Price:
+Tax (10%):
+Total:

@@ -1,0 +1,76 @@
+from sqlalchemy import create_engine, Column, Integer, String, Date, DateTime, Float, ForeignKey
+from sqlalchemy.orm import declarative_base, relationship
+
+Base = declarative_base()
+
+class SinhVien(Base):
+    _tablename_ = 'sinh_vien'
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    ho_ten = Column(String(255), nullable=False)
+    ngay_sinh = Column(Date, nullable=False)
+    dia_chi = Column(String(255))
+    email = Column(String(255), unique=True)
+    dang_kys = relationship('DangKy', back_populates='sinh_vien')
+    diems = relationship('Diem', back_populates='sinh_vien')
+
+class KhoaHoc(Base):
+    _tablename_ = 'khoa_hoc'
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    ten_khoa_hoc = Column(String(255), nullable=False)
+    mo_ta = Column(String(1000))
+    dang_kys = relationship('DangKy', back_populates='khoa_hoc')
+    lop_hocs = relationship('LopHoc', back_populates='khoa_hoc')
+
+class DangKy(Base):
+    _tablename_ = 'dang_ky'
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    sinh_vien_id = Column(Integer, ForeignKey('sinh_vien.id'))
+    khoa_hoc_id = Column(Integer, ForeignKey('khoa_hoc.id'))
+    ngay_dang_ky = Column(Date, server_default='CURRENT_DATE')
+    sinh_vien = relationship('SinhVien', back_populates='dang_kys')
+    khoa_hoc = relationship('KhoaHoc', back_populates='dang_kys')
+
+class LopHoc(Base):
+    _tablename_ = 'lop_hoc'
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    giao_vien = Column(String(255), nullable=False)
+    thoi_gian = Column(DateTime, nullable=False)
+    phong_hoc = Column(String(255))
+    khoa_hoc_id = Column(Integer, ForeignKey('khoa_hoc.id'))
+    khoa_hoc = relationship('KhoaHoc', back_populates='lop_hocs')
+    diems = relationship('Diem', back_populates='lop_hoc')
+
+class Diem(Base):
+    _tablename_ = 'diem'
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    sinh_vien_id = Column(Integer, ForeignKey('sinh_vien.id'))
+    lop_hoc_id = Column(Integer, ForeignKey('lop_hoc.id'))
+    diem_so = Column(Float)
+    sinh_vien = relationship('SinhVien', back_populates='diems')
+    lop_hoc = relationship('LopHoc', back_populates='diems')
+
+class GiaoVien(Base):
+    _tablename_ = 'giao_vien'
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    ten_giao_vien = Column(String(255), nullable=False)
+    lop_hocs = relationship('LopHoc', back_populates='giao_vien')
+
+class ThoiGianHoc(Base):
+    _tablename_ = 'thoi_gian_hoc'
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    ten_thoi_gian = Column(String(255), nullable=False)
+    lop_hocs = relationship('LopHoc', back_populates='thoi_gian_hoc')
+
+class QuanLyHocPhi(Base):
+    _tablename_ = 'quan_ly_hoc_phi'
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    sinh_vien_id = Column(Integer, ForeignKey('sinh_vien.id'))
+    khoa_hoc_id = Column(Integer, ForeignKey('khoa_hoc.id'))
+    hoc_phi = Column(Float)
+    ngay_thanh_toan = Column(Date, server_default='CURRENT_DATE')
+    sinh_vien = relationship('SinhVien', back_populates='quan_ly_hoc_phi')
+    khoa_hoc = relationship('KhoaHoc', back_populates='quan_ly_hoc_phi')
+
+# Tạo engine và cơ sở dữ liệu
+engine = create_engine('mysql://username:password@localhost:3306/ten_co_so_du_lieu')
+Base.metadata.create_all(engine)

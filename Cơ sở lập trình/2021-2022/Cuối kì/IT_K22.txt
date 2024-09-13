@@ -1,0 +1,3 @@
+1. 
+2. Không dung vòng lặp (For, While, Switch, If, Goto,... Dùng đệ quy). Hãy viết 1 hàm nhập vào số từ 1-7, trả ra kết quả "Thứ 2...Chủ Nhật"
+3. 

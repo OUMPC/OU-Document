@@ -1,0 +1,31 @@
+Bui Hoang Viet Anh,Hau ve,34,CLB Ha Noi
+Bui Tan Truong,Thu mon,24,CLB Ha Noi
+Bui Tien Dung,Hau ve,4,CLB Viettel
+Do Duy Manh,Hau ve,2,CLB Ha Noi
+Doan Van Hau,Hau ve,5,CLB Ha Noi
+Ha Duc Chinh,Tien dao,18,CLB SHB Da Nang
+Ho Tan Tai,Hau ve,35,CLB Binh Dinh
+Ho Tuan Tai,Tien dao,10,CLB Thanh pho Ho Chi Minh
+Le Tien Anh,Tien ve,11,CLB Topenland Binh Dinh
+Le Van Xuan,Hau ve,27,CLB Ha Noi
+Luong Xuan Truong,Tien ve,6,CLB Hoang Anh Gia Lai
+Ly Cong Hoang Anh,Tien ve,33,CLB Hong Linh Ha Tinh
+Nguyen Hoang Duc,Tien ve,14,CLB Viettel
+Nguyen Phong Hong Duy,Hau ve,7,CLB Hoang Anh Gia Lai
+Nguyen Quang Hai,Tien ve,19,CLB Ha Noi
+Nguyen Thanh Binh,Hau ve,31,CLB Viettel
+Nguyen Thanh Chung,Hau ve,16,CLB Ha Noi
+Nguyen Tien Linh,Tien dao,22,CLB Becamex Binh Duong
+Nguyen Trong Hoang,Hau ve,8,CLB Viettel
+Nguyen Tuan Anh,Tien ve,11,CLB Hoang Anh Gia Lai
+Nguyen Van Hoang,Thu mon,25,CLB Song Lam Nghe An
+Nguyen Van Toan,Tien dao,9,CLB Hoang Anh Gia Lai
+Nguyen Van Toan,Thu mon,23,CLB Hai Phong
+Pham Duc Huy,Tien ve,15,CLB Ha Noi
+Pham Tuan Hai,Tien dao,10,CLB Hong Linh Ha Tinh
+Phan Van Duc,Tien ve,20,CLB Song Lam Nghe An
+Que Ngoc Hai,Hau ve,3,CLB Viettel
+Tran Dinh Trong,Hau ve,21,CLB Ha Noi
+Tran Minh Vuong,Tien ve,26,CLB Hoang Anh Gia Lai
+Truong Van Thiet,Hau ve,5,CLB Viettel
+Vu Van Thanh,Hau ve,17,CLB Hoang Anh Gia Lai

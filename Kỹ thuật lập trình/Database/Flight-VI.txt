@@ -1,0 +1,12 @@
+4
+Nhat, Hoa Ky, Uc, Han Quoc
+Thuong, Thuong gia, VIP
+VND
+18575000, 32459000, 25120000, 16750000
+20670000, 37670000, 29878000, 19345000
+38900000, 56100000, 56230000, 36789000
+Ban mua ve may bay di dau:
+Loai ve ban muon mua:
+Tien ve:
+Thue (10%):
+Tong cong:

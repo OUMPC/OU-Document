@@ -1,0 +1,5 @@
+Chuong trinh cong 2 so bat ky
+Nhap vao so thu nhat:
+Nhap vao so thu hai:
+Tong 2 so vua nhap la:
+Ban co tiep tuc khong C/K (1/0):
