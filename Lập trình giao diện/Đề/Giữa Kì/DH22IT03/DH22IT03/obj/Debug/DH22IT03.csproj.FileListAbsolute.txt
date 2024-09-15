@@ -1,0 +1,12 @@
+E:\WinForm\DH22IT03\DH22IT03\bin\Debug\DH22IT03.exe.config
+E:\WinForm\DH22IT03\DH22IT03\bin\Debug\DH22IT03.exe
+E:\WinForm\DH22IT03\DH22IT03\bin\Debug\DH22IT03.pdb
+E:\WinForm\DH22IT03\DH22IT03\obj\Debug\DH22IT03.csproj.AssemblyReference.cache
+E:\WinForm\DH22IT03\DH22IT03\obj\Debug\DH22IT03.Properties.Resources.resources
+E:\WinForm\DH22IT03\DH22IT03\obj\Debug\DH22IT03.csproj.GenerateResource.cache
+E:\WinForm\DH22IT03\DH22IT03\obj\Debug\DH22IT03.csproj.CoreCompileInputs.cache
+E:\WinForm\DH22IT03\DH22IT03\obj\Debug\DH22IT03.exe
+E:\WinForm\DH22IT03\DH22IT03\obj\Debug\DH22IT03.pdb
+E:\WinForm\DH22IT03\DH22IT03\obj\Debug\DH22IT03.Form1.resources
+E:\WinForm\DH22IT03\DH22IT03\obj\Debug\DH22IT03.Game.resources
+E:\WinForm\DH22IT03\DH22IT03\obj\Debug\DH22IT03.Ve.resources
